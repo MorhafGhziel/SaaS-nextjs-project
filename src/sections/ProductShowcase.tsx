@@ -31,7 +31,7 @@ import { useRef } from 'react';
             </p>
           </div>
           <div className='relative'>
-          <motion.img src={ProductImage.src}
+          <Image src={ProductImage}
             alt='Product Image'
             className='mt-10'
             />
