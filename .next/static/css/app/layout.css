@@ -652,14 +652,26 @@ video {
 .-left-6 {
   left: -1.5rem;
 }
+.-left-\[350px\] {
+  left: -350px;
+}
 .-right-36 {
   right: -9rem;
+}
+.-right-\[331px\] {
+  right: -331px;
 }
 .-top-32 {
   top: -8rem;
 }
 .-top-8 {
   top: -2rem;
+}
+.-top-\[137px\] {
+  top: -137px;
+}
+.-top-\[19px\] {
+  top: -19px;
 }
 .bottom-24 {
   bottom: 6rem;
@@ -672,18 +684,6 @@ video {
 }
 .top-\[524px\] {
   top: 524px;
-}
-.-left-\[350px\] {
-  left: -350px;
-}
-.-top-\[137px\] {
-  top: -137px;
-}
-.-right-\[331px\] {
-  right: -331px;
-}
-.-top-\[19px\] {
-  top: -19px;
 }
 .z-20 {
   z-index: 20;
@@ -894,11 +894,18 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .pb-20 {
   padding-bottom: 5rem;
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.text-center {
+  text-align: center;
 }
 .text-4xl {
   font-size: 2.25rem;
@@ -966,6 +973,10 @@ video {
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
 }
+.text-\[\#BCBCBC\] {
+  --tw-text-opacity: 1;
+  color: rgb(188 188 188 / var(--tw-text-opacity));
+}
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -979,6 +990,68 @@ video {
 }
 .\[mask-image\:linear-gradient\(to_right\2c transparent\2c black\2c transparent\)\] {
   mask-image: linear-gradient(to right,transparent,black,transparent);
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:bottom-0::before {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
+.before\:top-2::before {
+  content: var(--tw-content);
+  top: 0.5rem;
+}
+
+.before\:bottom-1::before {
+  content: var(--tw-content);
+  bottom: 0.25rem;
+}
+
+.before\:bottom-4::before {
+  content: var(--tw-content);
+  bottom: 1rem;
+}
+
+.before\:top-1::before {
+  content: var(--tw-content);
+  top: 0.25rem;
+}
+
+.before\:h-full::before {
+  content: var(--tw-content);
+  height: 100%;
+}
+
+.before\:w-full::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:bg-red-500::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.before\:bg-\[linear-gradient\(to_right\2c \#F878FF\2c \#FB92CF\2c \#FFDD98\2c \#C2F0B1\2c \#2FD8FE\)\]::before {
+  content: var(--tw-content);
+  background-image: linear-gradient(to right,#F878FF,#FB92CF,#FFDD98,#C2F0B1,#2FD8FE);
+}
+
+.before\:blur::before {
+  content: var(--tw-content);
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.before\:content-\[\'\'\]::before {
+  --tw-content: '';
+  content: var(--tw-content);
 }
 
 @media (min-width: 768px) {
@@ -1025,6 +1098,14 @@ video {
 
   .md\:flex-1 {
     flex: 1 1 0%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
   }
 
   .md\:py-12 {
